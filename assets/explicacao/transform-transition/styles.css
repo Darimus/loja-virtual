@@ -1,0 +1,25 @@
+body {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: rgb(0,184,212);
+    color: rgb(26,35,126);
+    border: none;
+    border-radius: 4px;
+
+    transform: scale(1);
+    transition: transform 1s linear; /* Faz animação com começo meio e fim
+    como se estivesse animando quadros por segundo */
+}
+
+.btn:hover { /* Hover é quando colocamos o mouse sobre ele */
+    background-color: aqua;
+    transition: transform 1s linear, 
+                background-color 1s linear;
+    transform: scale(1.5); /* Faz crescer o botão x2, ou seja tudo que está dentro do scale é multiplicado */
+}

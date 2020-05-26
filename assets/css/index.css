@@ -86,14 +86,10 @@ main {
 
 .menu-departamentos li ul {
     display: none;
-    transition: 1s linear;
-
 }
 
 .menu-departamentos li:hover ul {
-    display: block;
-    transition: 1s linear;
-
+    display: block;git 
 }
 
 .menu-departamentos ul ul li {

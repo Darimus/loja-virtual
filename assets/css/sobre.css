@@ -1,0 +1,101 @@
+body{
+    color: #333333;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", "Arial", "sans-serif";
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 940px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+p::first-letter {
+    font-weight: bold;
+}
+
+:not(p) + p::first-line {
+    font-variant: small-caps;
+}
+
+h2 + p {
+    text-indent: 0;
+}
+
+img.logo {
+    position: relative;
+    right: 0;
+}
+
+h1 {
+    background-image: url(../imagem/43/mirror-fashion/img/sobre-background.jpg);
+    color: black;
+    padding-top: 10px;
+    font-size: 32px;
+}
+
+h2 {
+    border-bottom: 2px solid #333333;
+    color: black;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+p{
+    padding: 0 45px;
+    text-indent: 15px; /*Cria uma margem antes do inicio do texto, somente no começo do paragrafo. */
+    text-align: justify;
+    margin-bottom: 10px;
+    margin-top: 15px;
+
+    line-height: 23px;
+}
+
+figure {
+    background-color: #f2eded;
+    text-align: center;
+    border: 1px solid #ccc;
+    color: #000000;
+    padding: 15px;
+    margin: 30px;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+#familia-pelho { /* Seletor de ID # */
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+#centro-distribuicao {
+    margin: 0 auto; /* Centralizando a imagem no centro da tela, ele calcula sozinho as laterais e o top e bottom, porém devemos ter também um width para funcionar */
+    width: 550px;
+}
+
+footer {
+    color: #777;
+    margin: 30px 0;
+    padding: 30px 0;
+}
+
+footer img {
+    margin-right: 30px;
+    vertical-align: middle;
+    width: 94px;
+}
+
+ul {
+    padding: 0 45px;
+}
+
+ul li{
+    list-style: circle;
+    line-height: 25px;
+    text-align: justify;
+    
+}

@@ -89,7 +89,7 @@ main {
 }
 
 .menu-departamentos li:hover ul {
-    display: block;git 
+    display: block; 
 }
 
 .menu-departamentos ul ul li {
@@ -135,6 +135,10 @@ main {
     box-shadow: 1px 1px 4px #999;
 }
 
+.paineis li {
+    transition: 0.7s ease-out;
+}
+
 .painel h2::before {
     content: '\2756';
     padding-right: 5px;
@@ -143,12 +147,12 @@ main {
 
 .paineis li:hover {
     transform: scale(1.1) rotate(5deg);
-    transition: transform 200ms linear;
+    transition: transform 200ms ease-in;
 }
 
 .paineis li:nth-child(2n):hover {
     transform: scale(1.1) rotate(-5deg);
-    transition: transform 200ms linear;
+    transition: transform 200ms ease-in;
 }
 
 .paineis a {

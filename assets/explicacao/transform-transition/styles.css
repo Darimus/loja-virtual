@@ -23,3 +23,19 @@ body {
                 background-color 1s linear;
     transform: scale(1.5); /* Faz crescer o botão x2, ou seja tudo que está dentro do scale é multiplicado */
 }
+
+li {
+    transform: scale(1) rotate(1deg);
+    transition: transform 1s linear;
+    margin-top: 10px;
+}
+
+li:hover {
+    transform: scale(2) rotate(360deg);
+    transition: transform 1s linear;
+}
+
+.btn2:hover {
+    transform: scale(2);
+    transition: transform 1s ease-in-out;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="responsivo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tag meta viweport: Ao colocar ela calcula automaticamente
+    os pixels virtuais do device, alguns aparelhos não usam os 
+        pixels 1 para 1 -->
+    <title>Document</title>
+</head>
+<body>
+    <h2>Responsivo e alguns conceitos de mobile first</h2>
+    <p>Alguns sites são construidos de forma para funcionar responsivamente com
+        o mesmo código. Para ficar mais claro, grandes empresas e portais de 
+        noticias constoem sites especificos para mobile e desktop, visto que
+        ao abrir o uol no mobile, as noticias prioritarias são aquelas que 
+        podem "afetar" o pedestre como: transito, acidente etc. Sendo assim
+        mudando de forma significativa o conteudo do mesmo e tornando mais
+        eficiente e melhor a construcao de sites especificos para cada plataforma.
+        Li no livro "Guia Front-End: O caminho das pedras para ser um dev Front-End	"
+        do Diego Eis, uma preve introdução sobre a tecnica/ pensamento de mobile
+        first, que nada mais é que pensar na construção do site primeiramente em 
+        mobile e depois desktop, sendo assim melhorando a construçao do site e evitando
+        erros ou piorando o workflow.
+        Segue uma passagem do livro "A ideia do Mobile First é muito simples: foque-se primeiro em
+        dispositivos com telas pequenas, depois vá adaptando seu site ou produto para telas	grandes."
+        "Quando	você pensa primeiro	em telas pequenas,vocêprecisa se preocupar com	uma	série de restrições. Por exemplo, performance"
+        Ou seja, performace não vai ser um problema para as telas maiores, visto que
+        já foi solucionado no mobile.
+        Ao ver o curso do Marco Bruno Dev na Twitch.tv/marcobrunodev, ele fala
+        sobre o conceito do Mobile First, e explica que com a experiencia dela
+        como decidir partir para o Mobile First ou "desktop first", basicamente
+        o ganho é muito grande quando o site no mobile é feito somente em uma coluna
+        como display Block, porém quando são várias colunas de uma vez, o ganho
+        é praticamente o mesmo se fizermos ao contrario.
+    </p>
+    <h2>Unidade de medida "%"</h2>
+    <p>Algumas unidades de medidas variaveis: % --> Quando aplicamos
+        a porcentagem em algum objeto e não funciona, faltou setar a 
+        altura(height) e largura(width) do pai muito provavelmente.
+        Porém alguma propriedades pega a altura do proprio elemento e não do elemento pai.
+        Verificar sempre visualmente o comportamento do objeto e assim lembrar dos possiveis
+        comportamentos que ali podem caber, sendo assim, descobrimos se o elementos
+        está pegando a % do pai ou do próprio elemento.
+
+        <article>
+            <section class="coiso">Somos 50% do tamanho de nosso pai</section>
+            <section class="coiso">Somos 50% do tamanho de nosso pai</section>
+        </article>
+
+        <article>
+            <section class="coisa">Movemos no eixo Y 100% do nosso elemento</section>
+            <section class="coisa">Movemos no eixo Y 100% do nosso elemento</section>
+        </article>
+    </p>
+
+    <h2>Unidade de medida VW e VH</h2>
+    <p>VH e VW são unidades bem simples de explicar, ele pega sempre
+        a largura e altura da tela como parametro e trabalha muito similarmente
+        como porcentagem.
+        Se uma tela tem Height de 1500px, porém tem scroll e cada pagedown tem 500px,
+        ou seja, para ver os 1500px teriamos que dar 3 pagedown, o VH pega como referencia
+        os 500px mostrado na tela e não os 1500px da tela total.
+    </p>
+</body>
+</html>

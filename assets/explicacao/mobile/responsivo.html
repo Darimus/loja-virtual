@@ -63,5 +63,19 @@
         ou seja, para ver os 1500px teriamos que dar 3 pagedown, o VH pega como referencia
         os 500px mostrado na tela e não os 1500px da tela total.
     </p>
+
+    <h2>EM e REM</h2>
+    <p>EM é uma únidade de medida que pega como referencia o font-size do elemento
+        pai. Caso o pai não tenha um font-size definido, ele ira procurar o elemento pai mais proximo.
+    </p>
+    <article class="EM">
+        <p class="margin-em">Eu tenho duas vezes o tamnho do article, que está definido como fz 10px</p>
+        <p>Eu também tenho duas vezes o tamanho, porém a margin top entre nos tem 3 vezes o tamanho da fonte, ou seja 30px</p>
+    </article>
+    <p>REM, pega sempre o elemento HTML como referencia, funciona igual o EM, com essa única diferença.(Padrão do HTML é 16px)</p>
+    <p>CH, character Unit, é baseado na largura do 0 (zero). Usado em espaçamentos entre textos
+        geralmente, um texto ao lado do outro e queremos dar um espaço horizontalmente baseado na fonte.
+        Layout baseado em tipografia, geralmente usado por design mais experientes.
+    </p>
 </body>
 </html>

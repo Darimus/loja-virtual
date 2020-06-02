@@ -66,3 +66,11 @@ header h1 img {
     height: 35px;
 }
 /* Fim roda pé */
+
+/* Ideia para desktop */
+@media (min-width: 800px) {
+    .sacola {
+        display: block;
+    }
+}
+/* Fim ideia para desktop */

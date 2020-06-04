@@ -56,44 +56,61 @@ header h1 img {
     padding-bottom: 30px;
 }
 
-.color > legend {
+.form-product > legend {
     font-weight: bold;
+    padding-bottom: 8px;
+    padding-left: 5px
 }
 
-.color label img {
-    display: block;
+.color {
+    position: relative;
+}
+
+.color-ball > .photo {
+    display: none; /* Esconder as fotos */
     margin: 0 auto;
     width: 95%;
+    margin-top: 60px;
+    border: 2px solid #d4d4d4;
 }
 
 .color-ball::before {
-    content: "";
-    display: block;
+    content: "";/* Para existir o conteudo, porém sem nada, assim fizemos a bolinha, sem o content não existe nada */
+    position: absolute;
     box-sizing: border-box;/* Não faz o elemento cresce com a borda colocada */
     width: 50px;
     height: 50px;
+    top: 0;
     border-radius: 50%;
     background-color: gray;
+    cursor: pointer;/* Para mudar o cursor e transformar na maozinha */
 }
 
 .color-ball[for="green"]::before {
-    background-color: #33cc66;
+    background-color: #33cc66;/* Mesma coisa */
+    left: 10px;
 }
 
 .color-ball[for="pink"]::before {
-    background-color: #ff6666;
+    background-color: #ff6666; /* Mesma coisa */
+    left: 80px;
 }
 
 .color-ball[for="blue"]::before {
-    background-color: #6666ff;
+    background-color: #6666ff; /* Dando cor ao elemento criado depois do color-ball */
+    left: 150px
 }
 
 .input-color {
-    display: none;
+    display: none; /* Escondendo o radio */
 }
 
 .input-color:checked + .color-ball::before{
-    border: 4px solid rgba(0, 0, 0, 0.4);
+    border: 4px solid rgba(0, 0, 0, 0.4);/* Da uma escurecida na borda da bolinha de "input" (fizemos ela com css e escondemos o radio verdadeiro) */
+}
+
+.input-color:checked + .color-ball > .photo {
+    display: block; /* Quando o input estiver checked a foto ira aparecer conforme o input selecionado, fazendo assim trocar as fotos conforme a cor */
 }
 
 .form-product > .buy {

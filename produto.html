@@ -31,7 +31,7 @@
         <h2 class="title">Camiseta Ecko Caveira Bad to The Bone</h2>
         <p class="price">por apenas R$ 20,90</p>
 
-        <form class="form-product" action="checkout.html" method="POST">
+        <form class="form-product">
             <legend>Escolha uma cor:</legend>
 
             <fieldset class="color">
@@ -52,7 +52,13 @@
                 </label>
             </fieldset>
 
-            <button class="buy">Comprar</button>
+            <legend>Escolha o Tamanho:</legend>
+            <fieldset class="range">
+                <input type="range" min="32" max="46" value="42" step="2" name="size" id="size">
+                <output for="size" name="value-size">42</output>
+            </fieldset>
+
+             <button class="buy">Comprar</button>
 
         </form>
     </section>

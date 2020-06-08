@@ -212,6 +212,59 @@ header h1 img {
 }
 /* Fim roda pé */
 
+
+/* Teste */
+.detalhes {
+    padding: 2em 0;
+}
+
+.detalhes h2 {
+    font-size: 1.5em;
+    line-height: 2;
+}
+
+.detalhes p {
+    margin: 1em 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.detalhes table {
+    border-spacing: 0.2em;
+    border-collapse: separate;
+}
+
+.detalhes thead {
+    background-color: #999;
+}
+
+.detalhes thead th {
+    font-weight: bold;
+    padding: 0.3em 1em;
+    text-align: center;
+}
+
+.detalhes td {
+    padding: 0.3em;
+}
+
+.detalhes tr:nth-child(2n) {
+    background-color: #ccc;
+}
+
+.detalhes td:first-child {
+    font-style: italic;
+}
+
+@media (min-width: 500px) {
+    .detalhes {
+        font-size: 1.2em;
+    }
+}
+
+
+/* Fim teste */
+
 /* Ideia para desktop */
 @media (min-width: 800px) {
 

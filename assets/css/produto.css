@@ -257,11 +257,29 @@ header h1 img {
     }
     /*  */
 
+    .main-product {
+        position: relative; /* Resolve o problema do elemento .title e .price com o absolute e left, eles ficavam se mexendo na tela em relação ao elemento pai mais proximo que era diferente de absolute (eu acho que o problema era este) */
+    }
+
+    .main-product > .title {
+        position: absolute;
+        text-align: left;
+        left: 450px;
+    }
+
+    .main-product > .price {
+        position: absolute;
+        text-align: left;
+        top: 100px;
+        left: 450px;
+
+    }
+
     .form-product  .color-choose {
         position: absolute;
         padding: 0;
-        left: 456px;
-        top: 0;
+        left: 460px;
+        top: 123px;
     }
 
     .color {
@@ -273,6 +291,7 @@ header h1 img {
         display: inline-block;
         margin-right: 10px;
         margin-top: 30px;
+        margin-top: 150px;
     }
 
     .color .photo {
@@ -287,6 +306,15 @@ header h1 img {
         margin: 1em 0;
         min-width: 240px;
         /* width: 45%; Tirei pelo conflito com o float na imagem, assim o elemento color-ball::before fica ao lado da imagem, como no layout*/
+    }
+
+    .form-product > .buy {
+        position: absolute;
+        left: 460px;
+        top: 240px;
+        padding: 0;
+        margin: 0;
+
     }
 
     .logo-footer > img {

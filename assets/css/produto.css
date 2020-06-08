@@ -234,22 +234,47 @@ header h1 img {
         right: 0;
     }
 
+    .sacola {
+        display: block; /* Para sair do display none */
+    }
     /*  */
 
-    .sacola {
-        display: block;
+    .color {
+        width: 100%;
+    }
+
+    .color-ball::before {
+        position: static; /* Perder o absolute e sair do contexto, assim evita do elemento ficar sobre a .photo */
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .color .photo {
+        float: left;
+        width: 428px;
+        margin: 0 20px 2px 10px;
     }
 
     .main-product fieldset {
-        display: inline-block;
+        display: inline-block; /* Perde o comportamento block, assim evitando o elemento color-ball::before ficar em cima da .photo */
         vertical-align: top;
         margin: 1em 0;
         min-width: 240px;
-        width: 45%;
+        /* width: 45%; Tirei pelo conflito com o float na imagem, assim o elemento color-ball::before fica ao lado da imagem, como no layout*/
     }
 
     .logo-footer > img {
         width: 15%;
     }
+
+
 }
 /* Fim ideia para desktop */
+
+/* @media (min-width: 480px) {
+    .color-ball > .photo {
+        width: 428px;
+        float: left;
+        margin-left: 11.547px;
+    }
+} */

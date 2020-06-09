@@ -1,0 +1,22 @@
+body {
+    padding-top: 55px;
+}
+
+.form-control:invalid {
+    border: 1px solid #cc0000;
+}
+
+.input-group-prepend {
+    display: block;
+}
+
+.input-group-prepend #input-text-radius {
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
+
+.custom-select {
+    display: block;
+    position: relative;
+    top: 32px;
+}

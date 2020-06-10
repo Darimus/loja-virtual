@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Explicação Função</title>
+</head>
+<body>
+    
+    <h1>Explicação de Função</h1>
+    <div>
+        <p>Temos que ter uma tag que abre e fecha para funcionar o JS
+            mesmo que ela não tenha conteudo nem um dentro dela.
+            A tag é <!-- "<script></script>" -->
+        </p>
+        <p>A function só é executada quando chamamos ela.
+            <br>Ex:
+            <ul>
+                <li>let idade = 32; (declarando uma variavel)</li>
+                <li>function maisVelho () {<br>
+                    idade = idade + 1; (Adicionando mais 1 a idade)<br>
+                    alert (idade); (mostra idade na tela)<br>
+                    }
+                </li>
+            </ul>
+        </p>
+    
+    <p>Para chamar a function devemos fazer o seguinte,
+        maisVelho(); É necessario o () para chamar a function.
+    </p>
+    </div>
+
+    <div>
+        <h2>Como chamar a função dentro do botão:</h2>
+        <p>Para atribuirmos o button na variavel botao e depois chama-la:
+            <ul>
+                <li>const botao = window.document.querySelector("button");</li>
+                <li>Devemos criar uma variavel. (const no caso)</li>
+                <li>Atribuir o nome dela (botao)</li>
+                <li>Entrar no navegador (.window), para entrar é (.)</li>
+                <li>Entrar no HTML (.document)</li>
+                <li>Fazer a busca no html (.querySelector("button"))</li>
+                <li>No caso usamos o Selector pois estamos buscando um elemento e não classe ou ID</li>
+                <li>Todo elemento dentro do HTML é string, então colocamos tudo dentro de ""</li>
+            </ul>
+        </p>
+        <p>Para chamar a variabel botao ao clicar no button:
+            <ul>
+                <li>botao.onclick = ficaMaisVelho;</li>
+                <li>Estamos querendo clicar e chamar a funcao, então começamos com a variavel criado para isso (botao)</li>
+                <li>Para procurar algo na variavel (.onclick), estamos atribuindo o valor onclick ao botao e assim o evento de clicar será efetuado.</li>
+                <li>Atribuimos (=) ficaMaisVelho ao onclick que sera disparado ao clicar no botao.</li>
+            </ul>
+        </p>
+    </div>
+    <button type="button" class="btn btn-dark">Bruno ficou mais velho:</button>
+
+    <script src="index.js"></script>
+</body>
+</html>
